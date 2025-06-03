@@ -3,11 +3,11 @@
 main() {
   local COMPONENT_NAME="$1"
   local CWD=$(pwd)
-  local COMPONENT_DIR="$CWD/components/$COMPONENT_NAME"
+  local COMPONENT_DIR="$CWD/src/components/$COMPONENT_NAME"
   local INDEXFILE="$COMPONENT_DIR/index.js"
   local COMPONENT_FILE="$COMPONENT_DIR/$COMPONENT_NAME.jsx"
 
-  if [[ ! -d "$CWD/components" ]]; then
+  if [[ ! -d "$CWD/src/components" ]]; then
     echo "Components directory not found"
     exit 1
   fi
